@@ -1,0 +1,283 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Poppins&family=Roboto&family=Roboto+Slab&family=Sofia+Sans:ital,wght@0,100;0,200;0,400;1,300&display=swap');
+
+body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    background-image: url(./images/pc.jpg);
+    background-size: cover;
+}
+
+.container {
+    width: 25vw;
+    min-height: 20vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 5px 5px 20px rgb(147, 139, 111);
+    border-radius: 20px;
+    color: rgb(61, 60, 60);
+}
+
+.input-field {
+    width: 70%;
+    padding: 12px 20px;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 10px;
+    border: none;
+    color: rgb(11, 11, 11);
+    letter-spacing: 0.1rem;
+    background-color: #f9cd97;
+    box-shadow: inset 5px 5px 10px #d4b288;
+}
+
+.input-field:focus {
+    outline: none;
+}
+
+::placeholder{
+    color: gray
+}
+
+#total-tasks {
+    position: relative;
+    left: -27%;
+    margin-top: 10px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: rgb(11, 11, 11);
+}
+
+ul {
+    padding: 0;
+}
+
+.task-container {
+    width: 18vw;
+    padding: 10px;
+    border-radius: 10px;
+    display:  flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    box-shadow: 4px 4px 10px #f1be67;
+}
+
+.task-container:hover {
+    background-color:#f7c588;
+    cursor: pointer;
+}
+
+.custom-checkbox {
+    appearance: none;
+    width: 18px;
+    height: 18px;
+    margin-right: 10px;
+    border-radius: 6px;
+    background-color: #ffa100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.custom-checkbox:hover {
+    background-color: #ff8202;
+    cursor: pointer;
+}
+
+.custom-checkbox:after {
+    /* font-family: "Font Awesome 5";
+    content: "\f00c";
+    font-size: 15px;
+    color: white;
+    display: none; */
+
+    background-image: url("https://cdn-icons-png.flaticon.com/512/7641/7641727.png");
+    font-size: 1rem;
+}
+
+.custom-checkbox:checked:after {
+    display: block;
+}
+
+.custom-checkbox:checked {
+    background-color: #ff8202;
+}
+
+label {
+    font-size: 1.2rem;
+}
+
+.task {
+    display: flex;
+    align-items: center;
+}
+
+.delete {
+    width: 34px;
+    height: 30px;
+}
+
+.delete:hover {
+    cursor: pointer;
+}
+
+.delete-img {
+    display: flex;
+    align-items: center;
+}
+
+.task-container {
+    padding: 10px;
+}
+
+
+@media screen and (max-width: 550px) {
+    body {
+        width: 100vw;
+        height: 100vh;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Poppins', sans-serif;
+        background-image: url(./images/mobile.jpg);
+        background-size: cover;
+    }
+    
+    .container {
+        width: 80vw;
+        min-height: 20vh;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        box-shadow: 5px 5px 20px rgb(147, 139, 111);
+        border-radius: 20px;
+        color: rgb(61, 60, 60);
+    }
+    
+    .input-field {
+        width: 70%;
+        padding: 12px 20px;
+        font-size: 1rem;
+        font-weight: 600;
+        border-radius: 10px;
+        border: none;
+        color: rgb(11, 11, 11);
+        letter-spacing: 0.1rem;
+        background-color: #f9cd97;
+        box-shadow: inset 5px 5px 10px #d4b288;
+    }
+    
+    .input-field:focus {
+        outline: none;
+    }
+    
+    ::placeholder{
+        color: gray
+    }
+    
+    #total-tasks {
+        position: relative;
+        left: -27%;
+        margin-top: 10px;
+        font-size: 0.8rem;
+        font-weight: 600;
+        color: rgb(11, 11, 11);
+    }
+    
+    ul {
+        padding: 0;
+    }
+    
+    .task-container {
+        width: 55vw;
+        padding: 10px;
+        border-radius: 10px;
+        display:  flex;
+        justify-content: center;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 20px;
+        box-shadow: 4px 4px 10px #f1be67;
+        transition: all 5s ease-in-out;
+    }
+    
+    .task-container:hover {
+        background-color:#f7c588;
+        cursor: pointer;
+    }
+    
+    .custom-checkbox {
+        appearance: none;
+        width: 18px;
+        height: 18px;
+        margin-right: 10px;
+        border-radius: 6px;
+        background-color: #ffa100;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .custom-checkbox:hover {
+        background-color: #ff8202;
+        cursor: pointer;
+    }
+    
+    .custom-checkbox:after {
+        /* font-family: "Font Awesome 5";
+        content: "\f00c";
+        font-size: 15px;
+        color: white;
+        display: none; */
+    
+        background-image: url("https://cdn-icons-png.flaticon.com/512/7641/7641727.png");
+        font-size: 1rem;
+    }
+    
+    .custom-checkbox:checked:after {
+        display: block;
+    }
+    
+    .custom-checkbox:checked {
+        background-color: #ff8202;
+    }
+    
+    label {
+        font-size: 1.2rem;
+    }
+    
+    .task {
+        display: flex;
+        align-items: center;
+    }
+    
+    .delete {
+        width: 34px;
+        height: 30px;
+    }
+    
+    .delete:hover {
+        cursor: pointer;
+    }
+    
+    .delete-img {
+        display: flex;
+        align-items: center;
+    }
+    
+    .task-container {
+        padding: 10px;
+    }
+}
