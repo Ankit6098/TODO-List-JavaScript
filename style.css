@@ -17,9 +17,6 @@ body {
 .container {
     width: 25vw;
     min-height: 20vh;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
     box-shadow: 5px 5px 20px rgb(147, 139, 111);
     border-radius: 20px;
     color: rgb(61, 60, 60);
@@ -27,9 +24,7 @@ body {
 
 .navigation-button {
     display: flex;
-    position: relative;
-    left: -41%;
-    margin-top: 10px;
+    margin: 10px;
 }
 
 .navigation-button div {
@@ -42,24 +37,31 @@ body {
 }
 
 .red {
-    width: 15px;
-    height: 15px;
+    width: 12px;
+    height: 12px;
     border-radius: 50%;
     background-color: red;
 }
 
 .orange {
-    width: 15px;
-    height: 15px;
+    width: 12px;
+    height: 12px;
     border-radius: 50%;
     background-color: #ffbd2d;
 }
 
 .green {
-    width: 15px;
-    height: 15px;
+    width: 12px;
+    height: 12px;
     border-radius: 50%;
     background-color: rgb(106, 214, 106);
+}
+
+.middel-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .input-field {
@@ -97,7 +99,7 @@ ul {
 }
 
 .task-container {
-    width: 18vw;
+    width: 17vw;
     padding: 10px;
     border-radius: 10px;
     display:  flex;
@@ -182,10 +184,6 @@ label {
         background-image: url("./images/tab.jpg");
     }
 
-    .navigation-button {
-        left: -40%;
-    }
-
     .container {
         width: 50vw;
     }
@@ -199,20 +197,11 @@ label {
     .container {
         width: 80vw;
         min-height: 20vh;
-        display: flex;
-        align-items: center;
-        flex-direction: column;
         box-shadow: 5px 5px 20px rgb(147, 139, 111);
         border-radius: 20px;
         color: rgb(61, 60, 60);
     }
 
-    .navigation-button {
-        display: flex;
-        position: relative;
-        left: -37%;
-        margin-top: 10px;
-    }
     
     .navigation-button div {
         margin-right: 5px;
