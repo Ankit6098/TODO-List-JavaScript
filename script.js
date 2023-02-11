@@ -107,5 +107,6 @@ function handelClickListener(e) {
     }
 }
 
+
 addTaskInput.addEventListener('keyup', handelInputKeypress);
 document.addEventListener('click', handelClickListener);
